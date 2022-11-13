@@ -5,11 +5,25 @@ import (
 
 	"github.com/gobuffalo/envy"
 	"github.com/gobuffalo/pop/v6"
+	"github.com/gofrs/uuid"
 )
 
-// DB is a connection to your database to be used
-// throughout your application.
 var DB *pop.Connection
+
+
+type User struct {
+	ID			uuid.UUID 	`db:"id"`
+	FirstName	string		`db:"first_name"`
+	LastName	string		`db:"last_name"`
+	Password	string		`db:"password"`
+	Email		string		`db:"email"`
+	Verified	bool		`db:"verified"`
+	Admin		bool		`db:"admin"`
+}
+
+type Error struct {
+	Message		string
+}
 
 func init() {
 	var err error
