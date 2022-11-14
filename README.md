@@ -31,12 +31,12 @@ A user object
 `POST /users`
 ```JSON
 {
-  "FirstName": "Bob",
-  "LastName": "Dylan",
-  "Email": "email@test.com",
-  "Password": "somePassword",
-  "Verified": false,
-  "Admin": false
+  "first_name": "Bob",
+  "last_name": "Dylan",
+  "email": "email@test.com",
+  "password": "somePassword",
+  "verified": false,
+  "admin": false
 }
 ```
 
@@ -46,13 +46,13 @@ A user object
 ### Response
 ```JSON
 {
-  "ID": "43229b75-4674-4e59-9d25-045d18a80658",
-  "FirstName": "Bob",
-  "LastName": "Dylan",
-  "Password": "9eEfKnFjLeiceoNxwaNu/wt7Mh2RyvknAu5CguEFg3I=",
-  "Email": "email@test.com",
-  "Verified": false,
-  "Admin": false
+  "id": "43229b75-4674-4e59-9d25-045d18a80658",
+  "first_name": "Bob",
+  "last_name": "Dylan",
+  "password": "9eEfKnFjLeiceoNxwaNu/wt7Mh2RyvknAu5CguEFg3I=",
+  "email": "email@test.com",
+  "verified": false,
+  "admin": false
 }
 ```
 
@@ -61,12 +61,12 @@ A user object
 `PUT /users/{id}`
 ```JSON
 {
-  "FirstName": "Bob",
-  "LastName": "Marley",
-  "Email": "email@test.com",
-  "Password": "myNewPassword",
-  "Verified": false,
-  "Admin": false
+  "first_name": "Bob",
+  "last_name": "Marley",
+  "email": "email@test.com",
+  "password": "myNewPassword",
+  "verified": false,
+  "admin": false
 }
 ```
 ### Response
